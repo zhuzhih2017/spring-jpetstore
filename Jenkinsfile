@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        build 'spring-jpetstore'
+        sh 'mvn package -DskipTests'
       }
     }
   }
